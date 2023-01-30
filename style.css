@@ -1,0 +1,113 @@
+ @import url('https://fonts.googleapis.com/css?family=Maven+Pro');
+    body {
+      font-family: 'Maven Pro', sans-serif;
+      color: #ffffff;
+      background: #B7B7B7;
+      -webkit-font-smoothing: antialiased;
+      -moz-font-smoothing: antialiased;
+      -ms-font-smoothing: antialiased;
+      -o-font-smoothing: antialiased;
+    }
+    
+    table {
+        width: 100%;
+        background: #101820;
+        border-collapse: collapse;
+        font-size:25px;
+        margin: 0px auto;
+        border-radius: 20px;
+     }
+
+
+    #logo{
+      width: 125px;
+      height: 125px;
+      background: url(calctax.svg) no-repeat;
+      background-size: 125px 125px;
+      margin: 0px auto;
+    }
+
+    .t {
+        font-size:10px;
+        text-align:center;
+        background: #fff;
+        color: #101820;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    label[id*="days"] {
+     font-size:25px;
+    }
+    label[id*="scope"] {
+     font-size:25px;
+    }
+    
+    input[type="text"] {
+     width: 100%;
+     font-size:30px;
+     box-sizing: border-box;
+     -webkit-box-sizing:border-box;
+     -moz-box-sizing: border-box;
+    }
+
+    .instructions {
+        font-size:14px;
+        text-align: center;
+      }    
+
+      .about {
+        font-size:12px;
+        text-align: justify;
+      }
+
+    /*
+        DESKTOP DEVICE
+    */
+    @media only screen and (min-width: 640px) {
+      table {
+        width: 500px;
+        background: #383838;
+        border-collapse: collapse;
+        font-size:30px;
+        margin: 0px auto;
+      }
+
+      .t {
+        font-size:30px;
+        text-align:center;
+        background: #fff;
+        color: #333333;
+      }
+      
+      label[id*="days"] {
+        font-size:30px;
+      }
+      label[id*="scope"] {
+        font-size:30px;
+      }
+      input[type="text"] {
+        width: 100%; 
+        font-size:35px;
+        box-sizing: border-box;
+        -webkit-box-sizing:border-box;
+        -moz-box-sizing: border-box;
+      }
+
+      .instructions {
+        font-size:14px;
+        text-align: center;
+      }    
+
+      .about {
+        font-size:12px;
+        text-align: justify;
+      }
+      #logo{
+        width: 200px;
+        height: 200px;
+        background: url(calctax.svg) no-repeat;
+        background-size: 200px 200px;
+        margin: 0px auto;
+      }
+    }

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!-- Derechos reservados 2016 GIGADATTA -->
+<!-- realizado por Julio Chinchilla
+       _            ______      _   _         
+      (_)           |  _  \    | | | |        
+  __ _ _  __ _  __ _| | | |__ _| |_| |_ __ _  
+ / _` | |/ _` |/ _` | | | / _` | __| __/ _` | 
+| (_| | | (_| | (_| | |/ / (_| | |_| || (_| | 
+ \__, |_|\__, |\__,_|___/ \__,_|\__|\__\__,_| 
+  __/ |   __/ |                               
+ |___/   |___/                                
+
+ -->
+<html lang="es">
+  <head>
+  <title>Calcular alcance</title>
+
+  <meta name="description" content="Calcule la cantidad a facturar a partir de una cantidad neta, incluyendo IVA e ISR">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="geo.region" content="GT">
+  <meta name="geo.placename" content="Guatemala">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="googlebot" content="index,notranslate,noimageindex,follow">
+  <meta name="robots" content="index,notranslate,noimageindex,follow">
+  <meta name="google" content="notranslate">
+  <meta name="keywords" content="calculadora, ads, ads GUATE">
+  
+  <meta property="og:title" content="Facturación IVA/ISR">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ads.gt/apps/fact/">
+  <meta property="og:image" content="http://ads.gt/img/clactax17122016.jpg">
+  <meta property="og:image:secure_url" content="https://ads.gt/img/clactax17122016.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1959">
+  <meta property="og:image:height" content="1025">
+  <meta property="og:description" content="Calcule la cantidad a facturar a partir de una cantidad neta, incluyendo IVA e ISR">
+  <meta property="og:locale:alternate" content="es_LA">
+  <meta property="fb:app_id" content="2152396761652119">
+  <meta property="article:author" content="https://facebook.com/adsguate">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@adsguate_">
+  <meta name="twitter:creator" content="@adsguate_">
+  <meta name="twitter:title" content="Facturación IVA/ISR">
+  <meta name="twitter:description" content="Calcule la cantidad a facturar a partir de una cantidad neta, incluyendo IVA e ISR">
+  <meta name="twitter:image" content="https://ads.gt/img/clactax17122016.jpg">
+
+  <link rel="icon" type="imge/png" href="calctax.svg">
+  
+  <link rel="stylesheet" href="style.css">
+  <script src="functions.js"></script>
+
+  </head>
+  <body onload="scope();">
+    <br>
+
+    <table class="table">
+      <tbody>
+
+        <tr>
+          <td colspan="2" class="t" align="center">
+            <div id="logo"></div>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2" align="center">
+            CÁLCULO FACTURACIÓN
+          </td>
+        </tr>
+
+        <tr style="background: #ff0000; color: #ffffff;">
+          <td>
+            TOTAL:
+          </td>
+          <td align="right">
+            <label id="totalfactura"></label>
+          </td>
+        </tr>
+
+        <tr style="background: #3800FC; color: #ffffff;">
+          <td>
+            IPSP:
+          </td>
+          <td align="right">
+            <label id="timbre"></label>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <input type="text" id="cantneta" value="1120" onkeypress="isNumber(event)" onkeyup="scope();" style="text-align:center; background: #ffffff; color: #383838;" maxlength="10">
+          </td>
+        </tr>
+
+        <tr style="background: #ff7402; color: #ffffff;">
+          <td>
+            BASE:
+          </td>
+          <td align="right">
+            <label id="base"></label>
+          </td>
+        </tr>
+
+        <tr style="background: #2700B0; color: #ffffff;">
+          <td>
+            IVA:
+          </td>
+          <td align="right">
+            <label id="ivapagar"></label>
+          </td>
+        </tr>
+
+        <tr style="background: #1B007D; color: #ffffff;">
+          <td>
+            ISR:
+          </td>
+          <td align="right">
+            <label id="isrpagar"></label>
+          </td>
+        </tr>
+
+      <tr style="background: #FCE300; color: #101820;">
+        <td>
+          RESTO:
+        </td>
+        <td align="right">
+          <label id="facturar"></label>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" class="instructions">
+          INGRESE CANTIDAD NETA/SUJETO A PAGOS TRIMESTRALES
+        </td>
+      </tr>
+
+      </tbody>
+    </table>
+
+  </body>
+</html>
